@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Web3.js LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1/web3.min.js"
+    integrity="sha512-GKw4QT/RccGJIwQxY3MhyiQ5pHrhQ8SuKFEafV+WcpOvtz7iYFQuQGFCvmGlHLctJTe8KrWU1FqvF7VOkEAJtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="main.css" />
+  <title>Web3 Login</title>
+</head>
+
+<body>
+
+  <section class="login-section">
+    <button class="login-btn">Log in with Web3</button>
+    <span class="instruction">
+      Ensure that you have an Ethereum based wallet like MetaMask installed
+    </span>
+  </section>
+
+  <section class="dashboard-section">
+    <div class='header'>
+      <div class='logo'><img class="logo-png"
+          src="https://github.com/hersch17/Web3Sphinx/assets/128597092/8e5a17f2-c9e0-45ed-b1b6-7a6ffd75ea55" />
+      </div>
+      <div class='bank-name'>DeFiBank</div>
+      <div class='sign-out'>SIGN OUT</div>
+    </div>
+    <br />
+    <div class="container">
+      <h1>
+        <p>Hello User!</p>
+      </h1>
+      <h1 class="h-1">Current Balance: ₹<span id="value">234</span></h1>
+      <div class="divider"></div>
+      <form action="#">
+        <h2 class="h-2">Amount to Top Up</h2>
+        <input id="input-amount" type="number" step="0.01" min=0 name="topUp" value="" />
+        <h2 class="h-2">Amount to Withdraw</h2>
+        <input class="input-field" id="withdrawal-amount" type="number" name="withdraw" step="0.01" min=0 value="" />
+        <input class="input-field" id="submit-btn" type="submit" value="Finalise Transaction" />
+      </form>
+    </div>
+    <div class="footer">© De-Fi Bank @ DVerse.io</div>
+  </section>
+</body>
+
+<script src="./index.js"></script>
+
+</html>
